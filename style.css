@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+ .btn{
+    border:2px solid;
+    padding:1em 2em;
+    margin:0.625em;
+    cursor:pointer;
+    text-transform:uppercase;
+ }
+.shadow:hover{
+    -web-kit-animation:shadow 0.3 both;
+             animation:shadow 0.3 both;
+}
+
+ @keyframes shadow {
+    0% { 
+              box-shadow: 0 0 #000000, 0 0 #000000;
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+              box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000, 5px 5px #000000,6px 6px #000000,7px 7px #000000;
+              transform: translateX(-8px) translateY(-8px);
+    }
+  }
+
+  
+
