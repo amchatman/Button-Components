@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  body{
-   background-color:#FCE1DA;
-  }
+
  .btn{
     border:2px solid;
     padding:1em 2em;
@@ -13,22 +11,21 @@
     cursor:pointer;
     text-transform:uppercase;
  }
- .shadow-tl{
-   background:#E83F40;
-   color:#E9EFF2;
-   border:2px solid #F05F64;
+ .shadow-tl,.shadow-tr{
+   border:2px solid #000000;
    border-radius:5px;
+   background-color:#BFB9FC;
  }
  .shadow-tl:hover{
    animation:shadow-tl 0.3 both;
 }
 @keyframes shadow-tl{
    0%{
-      box-shadow: 0 0 #EB6E71, 0 0 #EB6E71;
+      box-shadow: 0 0 #000000, 0 0 #000000;
       transform:translateX(0) translateY(0);
    }
    100%{
-      box-shadow:-1px -1px #EB6E71, -2px -2px #EB6E71,-3px -3px #EB6E71,-4px -4px #EB6E71, -5px -5px #EB6E71,-6px -6px #EB6E71,-7px -7px #EB6E71;
+      box-shadow:-1px -1px #000000, -2px -2px #000000,-3px -3px #000000,-4px -4px #000000, -5px -5px #000000,-6px -6px #000000,-7px -7px #000000;
       transform:translateX(8px) translateY(8px);
    } 
 }
@@ -45,16 +42,22 @@
               transform: translateX(-8px) translateY(8px);
    }
 }
+.shadow-bl,.shadow-br{
+   background-color:#EB6E71;
+   color:#E9EFF2;
+   border:2px solid #F05F64;
+   border-radius:5px;
+}
 .shadow-bl:hover{
    animation:shadow-bl 0.3 both;
 }
 @keyframes shadow-bl{
    0%{
-      box-shadow: 0 0 #000000, 0 0 #000000;
+      box-shadow: 0 0 #E83F40, 0 0 #E83F40;
       transform: translateX(0) translateY(0);
    }
    100%{
-       box-shadow: -1px 1px #000000, -2px 2px #000000, -3px 3px #000000, -4px 4px #000000, -5px 5px #000000,-6px 6px #000000,-7px 7px #000000;
+       box-shadow: -1px 1px #E83F40, -2px 2px #E83F40, -3px 3px #E83F40, -4px 4px #E83F40, -5px 5px #E83F40,-6px 6px #E83F40,-7px 7px #E83F40;
               transform: translateX(8px) translateY(8px);
    }
 }
@@ -64,11 +67,11 @@
 
  @keyframes shadow-br {
     0% { 
-              box-shadow: 0 0 #000000, 0 0 #000000;
+              box-shadow: 0 0 #E83F40, 0 0 #E83F40;
               transform: translateX(0) translateY(0);
     }
     100% {
-              box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000, 5px 5px #000000,6px 6px #000000,7px 7px #000000;
+              box-shadow: 1px 1px #E83F40, 2px 2px #E83F40, 3px 3px #E83F40, 4px 4px #E83F40, 5px 5px #E83F40,6px 6px #E83F40,7px 7px #E83F40;
               transform: translateX(-8px) translateY(-8px);
     }
   }
